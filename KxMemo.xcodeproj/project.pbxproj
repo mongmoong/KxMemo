@@ -14,6 +14,7 @@
 		677E36332512EFF60058287E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677E36322512EFF60058287E /* Assets.xcassets */; };
 		677E36362512EFF60058287E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677E36342512EFF60058287E /* LaunchScreen.storyboard */; };
 		677E363F2512F5F60058287E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E363E2512F5F60058287E /* Model.swift */; };
+		677E36412512F7CB0058287E /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E36402512F7CB0058287E /* MemoListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		677E36352512EFF60058287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		677E36372512EFF60058287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		677E363E2512F5F60058287E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		677E36402512F7CB0058287E /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				677E36342512EFF60058287E /* LaunchScreen.storyboard */,
 				677E36372512EFF60058287E /* Info.plist */,
 				677E362F2512EFF50058287E /* KxMemo.xcdatamodeld */,
+				677E36402512F7CB0058287E /* MemoListTableViewController.swift */,
 			);
 			path = KxMemo;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				677E36312512EFF50058287E /* KxMemo.xcdatamodeld in Sources */,
 				677E36272512EFF50058287E /* AppDelegate.swift in Sources */,
+				677E36412512F7CB0058287E /* MemoListTableViewController.swift in Sources */,
 				677E36292512EFF50058287E /* SceneDelegate.swift in Sources */,
 				677E363F2512F5F60058287E /* Model.swift in Sources */,
 			);

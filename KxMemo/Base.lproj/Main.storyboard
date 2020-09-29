@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ABf-Kj-3hj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ABf-Kj-3hj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ZE-aO-J3u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="nLR-Eq-5J0" detailTextLabel="HOD-A6-C5X" style="IBUITableViewCellStyleSubtitle" id="4Tg-Af-yZ9">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
@@ -25,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nLR-Eq-5J0">
-                                            <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -50,7 +51,7 @@
                     <navigationItem key="navigationItem" title="KxMemo" id="ycI-7z-8Q1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1vM-lR-f8R">
                             <connections>
-                                <segue destination="KCg-vl-hbL" kind="presentation" modalPresentationStyle="fullScreen" id="AS3-Ja-z6H"/>
+                                <segue destination="KCg-vl-hbL" kind="presentation" id="AS3-Ja-z6H"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -78,33 +79,44 @@
         <!--새 메모-->
         <scene sceneID="hmb-dI-lp2">
             <objects>
-                <viewController id="zAx-PS-tTV" sceneMemberID="viewController">
+                <viewController id="zAx-PS-tTV" customClass="ComposeViewController" customModule="KxMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="67x-29-DR2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lgr-88-ceD">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZBb-Sj-X6x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lgr-88-ceD" firstAttribute="top" secondItem="67x-29-DR2" secondAttribute="top" id="4YU-z7-9tt"/>
                             <constraint firstItem="Lgr-88-ceD" firstAttribute="leading" secondItem="ZBb-Sj-X6x" secondAttribute="leading" id="HZe-WZ-Gxg"/>
                             <constraint firstItem="Lgr-88-ceD" firstAttribute="trailing" secondItem="ZBb-Sj-X6x" secondAttribute="trailing" id="alO-L6-aIF"/>
                             <constraint firstAttribute="bottom" secondItem="Lgr-88-ceD" secondAttribute="bottom" id="zfB-Ss-ceZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZBb-Sj-X6x"/>
                     </view>
                     <navigationItem key="navigationItem" title="새 메모" id="pAF-KC-akA">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kKk-CZ-BIc"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NSh-mE-Qow"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kKk-CZ-BIc">
+                            <connections>
+                                <action selector="close:" destination="zAx-PS-tTV" id="sBk-bK-ZsV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NSh-mE-Qow">
+                            <connections>
+                                <action selector="save:" destination="zAx-PS-tTV" id="uTn-ly-HrH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="memoTextView" destination="Lgr-88-ceD" id="UoE-K5-K2C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W26-Al-9rx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +128,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KCg-vl-hbL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1O9-53-kMM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -129,4 +141,12 @@
             <point key="canvasLocation" x="1637.68115942029" y="-460.04464285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
